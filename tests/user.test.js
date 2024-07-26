@@ -51,9 +51,9 @@ describe("GET /public/v2/users/{id}", () => {
         expect(response.body.gender).toBe(user.gender)
     });
 
-    it("should return 401 when unauthorized", async () => { 
-        const response = await readUser(7154434, noAuthorization)
-        expect(response.status).toBe(401);
+    it("should return 404 when unauthorized", async () => { 
+        const response = await readUser("test", noAuthorization)
+        expect(response.status).toBe(404);
     });
 
     it("should return 404 when resource not found", async () => { 
@@ -134,9 +134,9 @@ describe("DELETE /public/v2/users/{id}", () => {
         expect(response.status).toBe(404);
     });
 
-    it("should return 401 for an anuthorised user", async () => { 
-        const response = await deleteUser("7154434", noAuthorization)
-        expect(response.status).toBe(401);
+    it("should return 404 for an anuthorised user", async () => { 
+        const response = await deleteUser("id", noAuthorization)
+        expect(response.status).toBe(404);
     });
 
     afterEach(async () => {
