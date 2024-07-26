@@ -24,9 +24,5 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Get token  
-        env:
-          TOKEN: ${{ secrets.TOKEN }}
-          
       - name: Run tests
-        run: TOKEN=${TOKEN} npm test
+        run: TOKEN=${{secrets.TOKEN}} npm test
