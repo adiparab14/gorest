@@ -17,7 +17,15 @@ The configuration file for the same is available here `.github/workflows/ci.yml`
 ## Test Scenarios
 
 #### Following test scenarios were covered
+ - Create user
+ - Read existing user
+ - Updated existing user
+ - Delete existing user
 
+ In addition there are a few scenarios for the different HTTP error codes.
+
+ A couple of tests i.e. read a user and delete an invalid user, when unauthorised return a 404, instead of a 401.
+ This is ambugious but makes sense as external user need not be get valid error when they are unauthorised.
 
 ## Steps to execute
 
@@ -32,3 +40,8 @@ The configuration file for the same is available here `.github/workflows/ci.yml`
     -  To execute all the tests
 
         `TOKEN=${YOUR_TOKEN} npm run test` 
+
+- #### Execute tests on Github actions
+    - Fork the repository
+    - For the forked respository, create an secret as per steps [here](https://docs.github.com/en/actions/security-guides/encrypted-secrets). Add personal token in the variable `TOKEN`
+    - Now trigger the Gists API Test workflow from Github Actions.
