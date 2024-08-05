@@ -86,7 +86,7 @@ describe("PUT|PATCH /public/v2/users/{id}", () => {
 
     it("should update details of an existing user'", async () => { 
         user.name = "updated " + user.name
-        user.email = "updated" + user.email
+        user.email = "updated" + user.email 
         user.gender = "female"
         const response = await updateUser(id, user, validAuthorization)
         expect(response.status).toBe(200);
