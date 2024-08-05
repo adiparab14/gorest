@@ -1,0 +1,151 @@
+{
+  "results": {
+    "tool": {
+      "name": "jest"
+    },
+    "summary": {
+      "tests": 12,
+      "passed": 12,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 1722842157086,
+      "stop": 1722842178555
+    },
+    "tests": [
+      {
+        "name": "POST /public/v2/users should create new user'",
+        "duration": 803,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "/Users/pritipatki/Documents/gorest/tests/user.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "user.test.js > POST /public/v2/users"
+      },
+      {
+        "name": "POST /public/v2/users should return 422 when response is incorrect'",
+        "duration": 716,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "/Users/pritipatki/Documents/gorest/tests/user.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "user.test.js > POST /public/v2/users"
+      },
+      {
+        "name": "POST /public/v2/users should return 401 when unauthorized",
+        "duration": 606,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "/Users/pritipatki/Documents/gorest/tests/user.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "user.test.js > POST /public/v2/users"
+      },
+      {
+        "name": "GET /public/v2/users/{id} should get details of an existing user'",
+        "duration": 1806,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "/Users/pritipatki/Documents/gorest/tests/user.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "user.test.js > GET /public/v2/users/{id}"
+      },
+      {
+        "name": "GET /public/v2/users/{id} should return 404 when unauthorized",
+        "duration": 1831,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "/Users/pritipatki/Documents/gorest/tests/user.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "user.test.js > GET /public/v2/users/{id}"
+      },
+      {
+        "name": "GET /public/v2/users/{id} should return 404 when resource not found",
+        "duration": 1842,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "/Users/pritipatki/Documents/gorest/tests/user.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "user.test.js > GET /public/v2/users/{id}"
+      },
+      {
+        "name": "GET /public/v2/users/{id} should return 404 for a deleted user'",
+        "duration": 2762,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "/Users/pritipatki/Documents/gorest/tests/user.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "user.test.js > GET /public/v2/users/{id}"
+      },
+      {
+        "name": "PUT|PATCH /public/v2/users/{id} should update details of an existing user'",
+        "duration": 2050,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "/Users/pritipatki/Documents/gorest/tests/user.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "user.test.js > PUT|PATCH /public/v2/users/{id}"
+      },
+      {
+        "name": "PUT|PATCH /public/v2/users/{id} should return 404 for a deleted user",
+        "duration": 2102,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "/Users/pritipatki/Documents/gorest/tests/user.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "user.test.js > PUT|PATCH /public/v2/users/{id}"
+      },
+      {
+        "name": "DELETE /public/v2/users/{id} should delete new user'",
+        "duration": 1783,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "/Users/pritipatki/Documents/gorest/tests/user.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "user.test.js > DELETE /public/v2/users/{id}"
+      },
+      {
+        "name": "DELETE /public/v2/users/{id} should return 404 for an invalid id",
+        "duration": 2355,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "/Users/pritipatki/Documents/gorest/tests/user.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "user.test.js > DELETE /public/v2/users/{id}"
+      },
+      {
+        "name": "DELETE /public/v2/users/{id} should return 404 for an anuthorised user",
+        "duration": 1383,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "/Users/pritipatki/Documents/gorest/tests/user.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "user.test.js > DELETE /public/v2/users/{id}"
+      }
+    ]
+  }
+}
